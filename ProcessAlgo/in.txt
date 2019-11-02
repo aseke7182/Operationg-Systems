@@ -1,0 +1,12 @@
+4
+
+8 0 1 
+4 1 1 
+9 2 1
+5 3 1 
+
+
+0) Index
+1) Burst Time
+2) Arrival Time
+3) priority
