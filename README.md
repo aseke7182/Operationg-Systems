@@ -1,1 +1,1 @@
-#Operating Systems KBTU. Fall 2019
+# Operating Systems KBTU. Fall 2019
