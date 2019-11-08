@@ -1,5 +1,0 @@
-Producer - Consumer
-Readers and Writers
-Dining Philosophers
-
-Semohors

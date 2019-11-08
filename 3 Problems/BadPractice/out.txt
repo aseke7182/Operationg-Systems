@@ -1,0 +1,13 @@
+Reader number 1 entered
+Reader number 2 entered
+Reader number 3 entered
+There is reader or writer, try later
+There is some reader or no writer, try later
+Reader number 2 leave
+Reader number 1 leave
+Reader number 0 leave
+There is some Writer or no reader, try later
+Writer entered
+There is reader or writer, try later
+Writer exited
+There is some reader or no writer, try later
