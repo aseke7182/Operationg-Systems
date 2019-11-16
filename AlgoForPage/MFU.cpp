@@ -27,16 +27,20 @@ int findx(int x){
 
 void printmemory( int x, bool changed ){
     int index = findx(x);
+    int cnt = 0;
     for(int i=0 ; i < v.size(); i++){
+        if(changed) cnt++;
         if(i==index and changed ) cout<<"|*"<<v[i].F<<"*|";
         else cout<<"|"<<v[i].F<<"|";
     }
     for(int i=v.size() ; i< memorysize ; i++){
+        if(changed) cnt++;
         if(i==index and changed ) cout<<"|*"<<-1<<"*|";
         else cout<<"|"<<-1<<"|";
     }
     if(changed) cout<<" ===> CHANGED";
     cout<<endl<<endl;
+    cout<<cnt;
 }
 
 bool exist(int x,int time){

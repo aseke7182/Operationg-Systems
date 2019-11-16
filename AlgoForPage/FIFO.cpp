@@ -17,12 +17,15 @@ const int N = (int)1e9+7;
 
 
 void printmemory(int index, int *array, int n, bool changed ){
+    int cnt = 0;
     for(int i=0 ; i < n ; i++){
+        if(changed) cnt++;
         if(i==index and changed ) cout<<"|*"<<array[i]<<"*|";
         else cout<<"|"<<array[i]<<"|";
     }
     if(changed) cout<<" ===> CHANGED";
     cout<<endl<<endl;
+    cout<<cnt;
 }
 
 void fill(int *array,int n){

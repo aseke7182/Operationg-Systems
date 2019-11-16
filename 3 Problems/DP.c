@@ -22,7 +22,7 @@ void here(int i){
 
 		printf("Philosopher %d is eating\n", i );
 
-		sleep(2); 
+		// sleep(2); 
 
 		sem_post(&chopstick[i]);
 		sem_post(&chopstick[(i+1)%5]);
