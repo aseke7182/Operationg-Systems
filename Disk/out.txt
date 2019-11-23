@@ -1,0 +1,9 @@
+53-->65. movement: 12
+65-->67. movement: 2
+67-->98. movement: 31
+98-->122. movement: 24
+122-->124. movement: 2
+124-->183. movement: 59
+183-->14. movement: 169
+14-->37. movement: 23
+Total movement: 322
