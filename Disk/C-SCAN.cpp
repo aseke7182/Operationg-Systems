@@ -46,6 +46,7 @@ signed main(){
             before = i;
         }
         if(i==200){
+            cout<<before<<"-->"<<i<<". movement: "<< abs(before-i)<<endl;
             i = 0;
         }
     }

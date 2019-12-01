@@ -66,19 +66,16 @@ signed main(){
     	for(int j=0 ; j < m ; j++)
     		need[i][j] = maximum[i][j] - allocation[i][j];
 
-    for(int i=0 ; i < m ; i++)
-    	work.pb(available[i]);
-
     for(int i=0 ; i < n ; i++)
     	finish.pb(false);
 
 
     // Resourse-Request Algorithm
     // ========================== 
-    req.pb(1);
     req.pb(0);
     req.pb(2);
-    int proc = 1;
+    req.pb(0);
+    int proc = 0;
     string s = request(proc);
     if( s == "exceeded maximum claim" ){
     	cout<<s;
@@ -93,14 +90,14 @@ signed main(){
 	    	if(!finish[i]){
 	    		ok = true;
 	    		for(int j=0 ; j < m ; j++){
-	    			if( need[i][j] > work[j] ){
+	    			if( need[i][j] > available[j] ){
 	    				ok = false;
 	    				break;
 	    			}
 	    		}
 	    		if(ok){
 	    			for(int j=0; j < m ; j++){
-	    				work[j] += allocation[i][j];
+	    				available[j] += allocation[i][j];
 	    			}
 	    			finish[i] = true;
 	    			ans.pb(i);
